@@ -120,7 +120,7 @@
 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp C_AC_SEARCH    &kp C_VOICE_COMMAND  &kp K_CANCEL                         &kp C_PREV  &kp C_PLAY_PAUSE   &kp C_NEXT         &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP
 &bt BT_SEL 0          &bt BT_SEL 2          &none                              &kp UP             &none                &bt BT_SEL 4                         &none       &mkp LCLK          &mmv MOVE_UP       &mkp RCLK          &none              &studio_unlock
 &bt BT_SEL 1          &bt BT_SEL 3          &hml LALT LEFT                     &hml LCMD DOWN     &hml LSHFT RIGHT     &bt BT_CLR      &none        &none   &none       &mmv MOVE_LEFT     &mmv MOVE_DOWN     &mmv MOVE_RIGHT    &kp RCTRL          &trans
-                                        &trans          &none           &trans            &studio_unlock &studio_unlock &trans          &mo 3                 &trans
+                                        &mo 3           &trans          &trans            &studio_unlock &studio_unlock &trans          &trans                &mo 3
             >;
         };
 
