@@ -37,6 +37,7 @@
                 // 24 25 26 27 28 29  // 3rd row left
                 30 31 32 33 34 35  // 3rd row right
                 // 36 37 38 39 40 41 42  // 4th row left
+                37 38 39 40  // 4th row left mod
                 43 44 45 46 47 48 49  // 4th row right
                 50 51 52 53  // thumb cluster left
                 54 55 56 57  // thumb cluster right
@@ -64,6 +65,7 @@
                 // 30 31 32 33 34 35  // 3rd row right
                 36 37 38 39 40 41 42  // 4th row left
                 // 43 44 45 46 47 48 49  // 4th row right
+                45 46 47 48  // 4th row right mod
                 50 51 52 53  // thumb cluster left
                 54 55 56 57  // thumb cluster right
             >;
