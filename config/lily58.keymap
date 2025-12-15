@@ -21,9 +21,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_MOD_LEFT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             // Triggers on Left Side Keys
@@ -35,9 +36,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_MOD_RIGHT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             // Triggers on Right Side Keys
