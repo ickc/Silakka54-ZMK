@@ -129,7 +129,3 @@ To build locally, follow the [ZMK documentation](https://zmk.dev/docs/developmen
 - [ZMK Keycodes](https://zmk.dev/docs/keymaps/behaviors)
 - [nice!nano Documentation](https://nicekeyboards.com/docs/nice-nano/)
 - [nice!view Documentation](https://nicekeyboards.com/docs/nice-view/)
-
-## License
-
-This configuration is provided as-is for personal use with the Silakka54 keyboard.
