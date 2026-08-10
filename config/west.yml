@@ -5,7 +5,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      # Pinned to the exact ZMK main commit the last known-good (2025-12-15)
+      # firmware was built from: v0.3.0 (Aug 2025) blanks the nice!view.
+      # TODO: root-cause the display regression and move forward again.
+      revision: 930b5cc058698986fabc1be96427c14937e983ea
       import: app/west.yml
   self:
     path: config

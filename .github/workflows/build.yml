@@ -15,4 +15,5 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    # Keep in sync with config/west.yml revision.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@930b5cc058698986fabc1be96427c14937e983ea
