@@ -71,17 +71,6 @@
             >;
         };
 
-        // QMK TT(n): momentary on hold, toggle on tap.
-        ltt: layer_tap_toggle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TOGGLE";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&mo>, <&tog>;
-        };
-
         mlr: mirror_layer_right {
             compatible = "zmk,behavior-hold-tap";
             label = "MIRROR_LAYER_RIGHT";
@@ -143,7 +132,7 @@
 &kp ESCAPE         &kp Q         &kp W        &kp E         &kp R                &kp T                         &kp Y         &kp U                       &kp I            &kp O          &kp P            &kp EQUAL
 &kp LEFT_BRACKET   &kp A         &kp S        &kp D         &kp F                &kp G                         &kp H         &kp J                       &kp K            &kp L          &kp SEMI         &kp SQT
 &kp RIGHT_BRACKET  &hml LCTRL Z  &hml LALT X  &hml LCMD C   &hml LSHFT V         &kp B         &none    &none  &kp N         &hmr RSHFT M                &hmr RCMD COMMA  &hmr RALT DOT  &hmr RCTRL FSLH  &kp BACKSLASH
-                                              &mll 2 GRAVE  &mll 1 SPACE         &kp TAB       &none    &none  &kp ENTER     &mlr 1 BACKSPACE            &ltt 2 2
+                                              &mll 2 GRAVE  &mll 1 SPACE         &kp TAB       &none    &none  &kp ENTER     &mlr 1 BACKSPACE            &mo 2
             >;
         };
 
@@ -154,7 +143,7 @@
 &kp EQUAL         &kp P             &kp O          &kp I            &kp U                       &kp Y                         &kp T         &kp R                &kp E        &kp W        &kp Q         &kp ESCAPE
 &kp SINGLE_QUOTE  &kp SEMICOLON     &kp L          &kp K            &kp J                       &kp H                         &kp G         &kp F                &kp D        &kp S        &kp A         &kp LEFT_BRACKET
 &kp BACKSLASH     &hml RCTRL SLASH  &hml RALT DOT  &hml RCMD COMMA  &hml RSHFT M                &kp N         &none    &none  &kp B         &hmr LSHFT V         &hmr LCMD C  &hmr LALT X  &hmr LCTRL Z  &kp RIGHT_BRACKET
-                                                   &ltt 3 3         &kp BACKSPACE               &kp ENTER     &none    &none  &kp TAB       &kp SPACE            &mlr 3 GRAVE
+                                                   &mo 3            &kp BACKSPACE            &kp ENTER     &none    &none  &kp TAB       &kp SPACE            &mlr 3 GRAVE
             >;
         };
 
