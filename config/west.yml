@@ -5,10 +5,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      # Pinned to the exact ZMK main commit the last known-good (2025-12-15)
-      # firmware was built from: v0.3.0 (Aug 2025) blanks the nice!view.
-      # TODO: root-cause the display regression and move forward again.
-      revision: 930b5cc058698986fabc1be96427c14937e983ea
+      # Pinned to a specific ZMK main commit; see AGENTS.md for why
+      # tracking `main` unpinned is not safe for this board.
+      revision: 268b1b1e82150460f00fd701bcd08583d5c75d29
       import: app/west.yml
   self:
     path: config

@@ -2,9 +2,9 @@
 # For more info, see https://docs.zmk.dev/docs/customization/clean-room
 
 include:
-  - board: nice_nano
+  - board: nice_nano@2//zmk
     shield: lily58_left nice_view_adapter nice_view
-  - board: nice_nano
+  - board: nice_nano@2//zmk
     shield: lily58_right nice_view_adapter nice_view
-  - board: nice_nano
+  - board: nice_nano@2//zmk
     shield: settings_reset
