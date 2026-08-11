@@ -5,7 +5,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3
+      # Pinned to a specific ZMK main commit; see AGENTS.md for why
+      # tracking `main` unpinned is not safe for this board.
+      revision: 268b1b1e82150460f00fd701bcd08583d5c75d29
       import: app/west.yml
   self:
     path: config
