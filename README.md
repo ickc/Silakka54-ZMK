@@ -8,10 +8,13 @@ The Silakka54 is a 54-key split keyboard that uses the Lily58 shield in ZMK. Sin
 
 ### Hardware
 
-- **Controller**: nice!nano
-- **Display**: nice!view
+- **Controller**: nRF52840 **SuperMini** — a nice!nano *clone*, sold as "nice!nano". Built as `nice_nano@2//zmk`
+- **Display**: nice!view (via `nice_view_adapter`)
+- **Battery**: 100 mAh per half, charged independently
 - **Layout**: Split ergonomic (54 keys)
 - **Features**: Bluetooth, deep sleep, mouse emulation
+
+> See **[HARDWARE.md](HARDWARE.md)** before changing the board target, the ZMK pin, or anything battery- or display-related. The controllers are not genuine nice!nanos, and the differences show up as wrong values rather than build errors.
 
 ## Layers
 
