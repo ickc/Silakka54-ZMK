@@ -18,15 +18,16 @@ The Silakka54 is a 54-key split keyboard that uses the Lily58 shield in ZMK. Sin
 
 ## Layers
 
-The keymap includes 5 layers:
+The keymap includes 4 layers:
 
-| Layer | Name | Description |
-|-------|------|-------------|
-| 0 | `base` | Default QWERTY layout with home row mods |
-| 1 | `esab` | Mirrored base layer (for one-handed typing) |
-| 2 | `fn` | Function keys, media controls, Bluetooth, and mouse |
-| 3 | `nf` | Mirrored function layer |
-| 4 | `shift-esab` | Shifted mirrored layer |
+| Layer | Name | Description | Reached by |
+|-------|------|-------------|------------|
+| 0 | `base` | Default QWERTY layout with home row mods | — |
+| 1 | `esab` | Mirrored base layer (for one-handed typing) | hold Space (left) or Backspace (right) |
+| 2 | `fn` | Function keys, media controls, Bluetooth, and mouse | hold the outer thumb key on `base` |
+| 3 | `nf` | Mirrored function layer | hold the outer thumb key on `esab` |
+
+A fifth layer, `shift-esab` (a shifted copy of `esab`, reached through the `mml`/`mmr` mirror mod-taps), was removed together with those behaviors when the layout moved to ORYX yXxz0, which cuts down on dual-function keys. For shifted mirrored characters, hold Shift as usual — the bottom-row mod-taps work on `esab` too.
 
 ## Features
 
@@ -41,8 +42,7 @@ The configuration uses positional hold-tap behaviors for home row modifiers:
 ### Advanced Behaviors
 
 - `hml` / `hmr`: Home row mods (left/right) with opposite-hand trigger
-- `mml` / `mmr`: Mirror mods for the mirrored layers
-- `mll` / `mlr`: Mirror layer switching with hold-tap
+- `mll` / `mlr`: Mirror layer switching with hold-tap, restricted to same-hand trigger keys so one-handed mirrored typing works
 
 ### Macros
 
